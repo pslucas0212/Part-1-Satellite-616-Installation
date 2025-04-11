@@ -2,9 +2,9 @@
 
 [Tutorial Menu](https://github.com/pslucas0212/RedHat-Satellite-6.16-VM-Provisioning-to-vSphere-Tutorial)
 
-Red Hat Satellite is a powerful content management and provisioning tool that you can add to any Red Hat Enterprise Linux subscription with the addition of a Smart Management subscription.  With Red Hat Satellite you can curate specific content across mutliple lifecycle environments through out your entire RHEL enviroment whether it is on-prem, in the cloud or hybrid.  In fact you can use Red Hat Satellite with your market-place instances of RHEL.  
+Red Hat Satellite is a powerful content management and provisioning tool that you can add to any Red Hat Enterprise Linux subscription with the addition of a Red Hat Satellite subscription.  With Red Hat Satellite you can curate specific content across mutliple lifecycle environments through out your entire RHEL enviroment whether it is on-prem, in the cloud or hybrid.  In fact you can use Red Hat Satellite with your market-place instances of RHEL.  
 
-In this multi-part tutorial we will cover how to provision RHEL VMs to a vSphere environment from Red Hat Satellite 6.12.  We will focus on provisioning RHEL 8.10 and 9.4 VMs using two Satellite RHEL life cycle envrionments, and you can easily adapt what you learn here to provision other RHEL versions.
+In this multi-part tutorial we will cover how to provision RHEL VMs to a vSphere environment from Red Hat Satellite 6.16.  We will focus on provisioning RHEL 8.10 and 9.5 VMs using two Satellite RHEL life cycle envrionments, and you can easily adapt what you learn here to provision other RHEL versions.
 
 In part 1, I'm documenting the steps for a simple "lab" install of Satellite 6.16.  The purpose of this setup is to give you a quick hands-on experience with Satellite.  The lab infrastructure is deployed to a small vSphere 8.0.3 lab environment with three EXSi servers that have internet access for the installation.  For this lab, I setup a separate server to host DNS and DHCP services for the network that is hosting Satellite and the vSphere environment.  Also, in a production environment you would also want to configure Satellite to interact with your directory/security services.  
 
@@ -14,7 +14,7 @@ I would recommend creating a local time server and configure all system in this 
 ### Pre-Reqs
 
 
-Create a VM for Satellite and install RHEL 9,4.  The VM was sized with 4 vCPUS, 20GB RAM and 400GB "local" drive.  Note: For this example I have enabled Simple Content Access (SCA) on the Red Hat Customer portal and do not need to attach a subscription to the RHEL or Satellite repositories.  After you have created and started the RHEL 9.4 VM, we will ssh to the RHEL VM and work from the command line.
+Create a VM for Satellite and install RHEL 9,5.  The VM was sized with 4 vCPUS, 20GB RAM and 400GB "local" drive.  Note: For this example I have enabled Simple Content Access (SCA) on the Red Hat Customer portal and do not need to attach a subscription to the RHEL or Satellite repositories.  After you have created and started the RHEL 9.5 VM, we will ssh to the RHEL VM and work from the command line.
 
 For this lab environment I chose sat01.example.com for the hostname of the server hosting Satellite. 
 
