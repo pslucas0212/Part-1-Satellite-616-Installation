@@ -14,7 +14,7 @@ I would recommend creating a local time server and configure all system in this 
 ### Pre-Reqs
 
 
-Create a VM for Satellite and install RHEL 9,5.  The VM was sized with 4 vCPUS, 20GB RAM and 400GB "local" drive.  Note: Simple Content Access (SCA) is enabled automatically now for all Red Hat customer accounts.  For more informatio on SCA please see this knowledgebase article [Simple Content Access](https://access.redhat.com/articles/simple-content-access).  After you have created and started the RHEL 9.5 VM, we will ssh to the RHEL VM and work from the command line.
+Create a VM for Satellite and install RHEL 9.5.  The VM was sized with 4 vCPUS, 20GB RAM and 400GB "local" drive.  Note: Simple Content Access (SCA) is enabled automatically now for all Red Hat customer accounts.  For more informatio on SCA please see this knowledgebase article [Simple Content Access](https://access.redhat.com/articles/simple-content-access).  After you have created and started the RHEL 9.5 VM, we will ssh to the RHEL VM and work from the command line.
 
 For this lab environment I chose sat01.example.com for the hostname of the server hosting Satellite. 
 
