@@ -176,4 +176,5 @@ You are now at the Satellite home screen.
 [Simple Content Access](https://access.redhat.com/articles/simple-content-access)  
 [Provisioning VMWare using userdata via Satellite 6.3-6.6](https://access.redhat.com/blogs/1169563/posts/3640721)  
 [Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
+[Red Hat Satellite Product Life Cycle](https://access.redhat.com/support/policy/updates/satellite)
 
